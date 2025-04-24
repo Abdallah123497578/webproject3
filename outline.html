@@ -1,0 +1,82 @@
+<!--Date:20/04/2025
+    Teacher:Ms Hoitink
+    student: Abdallah Biyi-Adedamola
+    class: 120, period 6,7,8
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="outline.css">
+        <title> Treaty 1</title>
+    </head>
+    <body>
+        <!--Nav Bar-->
+        <nav>
+            <h1>TONE</h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="outline.html" class="active">OUTLINE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="main.html">TREATY1</a></li>
+                <li><a href="sign.html">SIGN-UP</a></li>
+            </ul>
+        </nav>
+        <h2>CONTENT</h2>
+        <div>
+            <!--Questions for webpage(the random characters are special symbols to add other things that cant be typed in code)-->
+            <p>&#10148;&nbsp;&nbsp; <a href="main.html#question1"> What is Treaty 1 and its importance?</a></p>
+            <p>&#10148;&nbsp;&nbsp; <a href="main.html#question2">Why was Treaty 1 made? and to whoms favour was Treaty 1?</a></p>
+            <p>&#10148;&nbsp;&nbsp; <a href="main.html#question3">Where was Treaty 1 negotiated?</a></p>
+            <p>&#10148;&nbsp;&nbsp; <a href="main.html#question4">What communities were involved in Treaty 1  and what is thier ethnic affiliation?</a></p>
+            <p>&#10148;&nbsp;&nbsp; <a href="main.html#question5">What are the historic terms of Treaty 1?</a></p>
+            <p>&#10148;&nbsp;&nbsp; <a href="main.html#question6">what makes treaty 1 different from other treaties in canada?</a></p>
+            <p>&#10148;&nbsp;&nbsp; <a href="main.html#question7">How is Treaty 1 iplemented in todays world?</a></p>
+
+        </div>
+        <!--All the code in the <script> was done by me using a youtube tutorial and some little help to rearange some stars and other things from AI(Chat gpt)-->
+        <script>
+            // Function to create stars
+            function createStars(numStars) {
+            const body = document.body;
+    
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+                star.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                body.appendChild(star);
+            }
+            }
+    
+            // Function to create rockets
+            function createRockets(numRockets) {
+            const body = document.body;
+            for (let i = 0; i < numRockets; i++) {
+                const rocket = document.createElement('div');
+                rocket.className = 'rocket'; 
+                rocket.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+                rocket.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                body.appendChild(rocket);
+            }
+            }
+    
+            // Function to create asteroids
+            function createAsteroids(numAsteroids) {
+            const body = document.body;
+    
+            for (let i = 0; i < numAsteroids; i++) {
+                const asteroid = document.createElement('div');
+                asteroid.className = 'asteroid'; 
+                asteroid.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+                asteroid.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                body.appendChild(asteroid);
+            }
+            }
+            createStars(100); // Generate 100 stars also code to adjust number of stars that appear
+            createRockets(7); // Generate 5 rockets also code to adjust number of rockets that appear
+            createAsteroids(10); // Generate 5 asteroids also code to adjust number of asteroids that appear
+        </script>
+    </body>
+</html>

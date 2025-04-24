@@ -1,0 +1,80 @@
+<!--Date:20/04/2025
+    Teacher:Ms Hoitink
+    student: Abdallah Biyi-Adedamola
+    class: 120, period 6,7,8
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--Link to style.css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <h1>TONE</h1>
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="outline.html">OUTLINE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="main.html">TREATY1</a></li>
+            <li><a href="sign.html">SIGN-UP</a></li>
+        </ul>
+    </nav>
+
+    <!--giant Treaty one and its stories that looks like text but is actually a link -->
+    <div class="hero">
+        <a href="outline.html" style="text-decoration: none;">
+            <p>TREATY ONE AND ITS STORIES</p>
+        </a>
+    </div>
+    <!--All the code in the <script> was done by me using a youtube tutorial and some little help to rearange some stars and other things from AI(Chat gpt)-->
+    <script>
+        // Function to create stars
+        function createStars(numStars) {
+            const body = document.body;
+    
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+                star.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                body.appendChild(star);
+            }
+        }
+    
+        // Function to create rockets
+        function createRockets(numRockets) {
+            const body = document.body;
+            for (let i = 0; i < numRockets; i++) {
+                const rocket = document.createElement('div');
+                rocket.className = 'rocket'; 
+                rocket.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+                rocket.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                body.appendChild(rocket);
+            }
+        }
+    
+        // Function to create asteroids
+        function createAsteroids(numAsteroids) {
+            const body = document.body;
+    
+            for (let i = 0; i < numAsteroids; i++) {
+                const asteroid = document.createElement('div');
+                asteroid.className = 'asteroid'; 
+                asteroid.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+                asteroid.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                body.appendChild(asteroid);
+            }
+        }
+        createStars(100); // Generate 100 stars also code to adjust number of stars that appear
+        createRockets(15); // Generate 5 rockets also code to adjust number of rockets that appear
+        createAsteroids(10); // Generate 5 asteroids also code to adjust number of asteroids that appear
+    </script>
+    
+</body>
+</html>

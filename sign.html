@@ -1,0 +1,93 @@
+<!--Date:20/04/2025
+    Teacher:Ms Hoitink
+    student: Abdallah Biyi-Adedamola
+    class: 120, period 6,7,8
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/bee98c5444.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <h1>TONE</h1>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="outline.html">OUTLINE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="main.html">TREATY1</a></li>
+            <li><a href="sign.html" class="active">SIGN-UP</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+    <h1>Create an Account</h1>
+    <div class="signup-box">
+        <div class="left-box">
+            <form>
+                <input type="text" placeholder="Your Name" required class="input-box">
+                <input type="text" placeholder="username" required class="input-box">
+                <input type="email" placeholder="Your Email id" required class="input-box">
+                <input type="password" placeholder="Create Password" required class="input-box">
+                <input type="checkbox" id="terms">
+                <label for="terms">I accept the terms & conditions.</label>
+                <button type="submit">SIGN-UP <span>&#x27f6</span></button>
+            </form>
+        </div>
+        <div class="right-box">
+            <a href="" class="fb-link"><i class="fa-brands fa-facebook"></i>Connect with Facebook</a>
+            <a href="" class="tw-link"><i class="fa-brands fa-square-x-twitter"></i>Connect with X</a>
+            <a href="" class="g-link"><i class="fa-brands fa-google"></i>Connect with Google</a>
+        </div>
+    </div>
+    <p class="login-msg">I already have an account? <a href="">login now</a></p>    
+    </div>
+        <!--All the code in the <script> was done by me using a youtube tutorial and some little help from AI(Chat gpt)-->
+            <script>
+                // Function to create stars
+                function createStars(numStars) {
+                    const body = document.body;
+            
+                    for (let i = 0; i < numStars; i++) {
+                        const star = document.createElement('div');
+                        star.className = 'star';
+                        star.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+                        star.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                        body.appendChild(star);
+                    }
+                }
+            
+                // Function to create rockets
+                function createRockets(numRockets) {
+                    const body = document.body;
+                    for (let i = 0; i < numRockets; i++) {
+                        const rocket = document.createElement('div');
+                        rocket.className = 'rocket'; 
+                        rocket.style.top = Math.random() * 100 + 'vh'; // Random vertical position code
+                        rocket.style.left = Math.random() * 100 + 'vw'; // Random horizontal position code
+                        body.appendChild(rocket);
+                    }
+                }
+            
+                // Function to create asteroids
+                function createAsteroids(numAsteroids) {
+                    const body = document.body;
+            
+                    for (let i = 0; i < numAsteroids; i++) {
+                        const asteroid = document.createElement('div');
+                        asteroid.className = 'asteroid'; 
+                        asteroid.style.top = Math.random() * 100 + 'vh'; // Random vertical position code
+                        asteroid.style.left = Math.random() * 100 + 'vw'; // Random horizontal position code
+                        body.appendChild(asteroid);
+                    }
+                }
+                createStars(100); // Generate 100 stars also code to adjust number of stars that appear
+                createRockets(15); // Generate 5 rockets also code to adjust number of rockets that appear
+                createAsteroids(10); // Generate 5 asteroids also code to adjust number of asteroids that appear
+            </script>
+</body>
+</html>
